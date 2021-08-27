@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: 'Poppins';
   color: white;
-  background: url("../images/bg2.jpg");
+  background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -52,9 +52,10 @@ body {
 .nav {
   width: 50vw;
   height: 60px;
-  background: rgba(0, 0, 0, 0.815);
+  background: rgba(0, 0, 0, 0.575);
   letter-spacing: 4px;
   word-spacing: 3px;
+  border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
@@ -77,13 +78,13 @@ span {
           flex-flow: row wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  left: 60px;
+  left: 20px;
 }
 
 .fa-clipboard-list {
   font-size: 70px;
   position: absolute;
-  top: 123px;
+  top: 87px;
   left: 155px;
   color: seashell;
 }
@@ -92,62 +93,64 @@ span {
   mix-blend-mode: color;
   -webkit-animation: blobs 4s ease-in-out infinite alternate;
           animation: blobs 4s ease-in-out infinite alternate;
+  display: inline-block;
+  position: absolute;
 }
 
 .blobs_1 {
   background: #ff1493;
-  width: 50px;
-  height: 50px;
-  top: 90px;
-  left: 210px;
+  width: 45px;
+  height: 45px;
+  top: 175px;
+  left: 500px;
 }
 
 .blobs_2 {
-  background: #ff4500;
-  width: 70px;
-  height: 70px;
+  background: #ae33d3;
+  width: 67px;
+  height: 67px;
   top: 155px;
-  left: 230px;
+  left: 280px;
 }
 
 .blobs_3 {
   background: #00ff00;
-  width: 50px;
-  height: 50px;
-  top: 145px;
-  left: 20px;
+  width: 45px;
+  height: 45px;
+  top: 130px;
+  left: 400px;
 }
 
 .blobs_4 {
   background: #ff0000;
-  width: 90px;
-  height: 90px;
+  width: 85px;
+  height: 85px;
   top: 115px;
-  left: 100px;
+  left: 150px;
 }
 
 .blobs_5 {
-  background: #ffff00;
+  background: #0eaaaa;
   width: 30px;
   height: 30px;
-  top: 55px;
-  left: 70px;
+  top: 130px;
+  left: 580px;
 }
 
 .blobs_6 {
-  background: #00ffff;
-  width: 50px;
-  height: 50px;
-  top: 220px;
-  left: 55px;
+  background: #ecca30;
+  width: 90px;
+  height: 90px;
+  top: 115px;
+  left: 680px;
 }
 
 .blobs_7 {
-  background: #ff8c00;
-  width: 38px;
-  height: 38px;
-  top: 210px;
-  left: 180px;
+  background: navy;
+  width: 40px;
+  height: 40px;
+  top: 130px;
+  left: 850px;
 }
 
 @-webkit-keyframes blobs {
@@ -222,28 +225,28 @@ span {
   }
 }
 
-#box {
+.func {
   width: 50vw;
   height: 50vh;
-  min-height: 320px;
-  background: rgba(156, 230, 213, 0.8);
-  overflow: hidden;
-  text-transform: capitalize;
 }
 
-#box-title {
-  color: grey;
-  padding: 5px 15px;
-  font-style: italic;
-  font-weight: lighter;
+#box {
+  width: 50vw;
+  min-height: 320px;
+  background: rgba(156, 230, 213, 0.8);
+  padding: 10px;
+  text-transform: capitalize;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #add {
   position: relative;
+  height: 50px;
   background: rgba(0, 0, 0, 0.575);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 8px 2px;
+  padding: 8px 6px;
 }
 
 #input {
@@ -260,12 +263,18 @@ span {
 
 #addList {
   height: 35px;
-  width: 35px;
+  width: 5%;
   border-radius: 50%;
   outline: none;
   border: none;
   font-size: 20px;
   color: black;
+  cursor: pointer;
+}
+
+#addList:hover {
+  background: black;
+  color: white;
 }
 
 .quote .quote-box {
@@ -273,7 +282,7 @@ span {
   width: 25vw;
   height: 50vh;
   min-height: 320px;
-  background: #F2F2F2;
+  background: url("../images/bg2.jpg");
   color: black;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-in;
@@ -352,5 +361,61 @@ span {
   opacity: 1;
   background: #e2a9e5;
   background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
+}
+
+.list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.element {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: left;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px;
+  background: #fff;
+  color: black;
+  cursor: pointer;
+  z-index: 4;
+  border-radius: 2px;
+  padding-right: 80px;
+  word-wrap: break-word;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.element .tick {
+  position: absolute;
+  margin: auto;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  right: 50px;
+  float: right;
+  z-index: +5;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.element .dustbin {
+  position: absolute;
+  margin: auto;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  float: right;
+  z-index: +5;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.element:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
