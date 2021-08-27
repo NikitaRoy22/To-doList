@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="nav">
+                <h2><i class="fas fa-clipboard-list"></i>To-do List</h2>
+            </div>
+            <div class="contain">
+                <div class="func">
+                    <div id="box">
+                        <h1 id="box-title">Your list goes here...</h1>
+                    </div>
+                    
+                    <div id="add">
+                        <input type="text" placeholder="Add Your List..." id="input">
+                        <button type="button" onclick="addItem()" id="addList"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                
+                <div class="quote">
+                    <div class="quote-box">
+                        <p>Don’t Let Yesterday Take Up Too Much Of Today.</p>
+                        <h2>Will Rogers</h2>
+                        <button type="button" onclick="refresh()" id="refresh"><i class="fas fa-sync"></i></button>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="work.js"></script>
+    </body>
+</html>
