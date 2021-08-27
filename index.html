@@ -9,19 +9,22 @@
     </head>
     <body>
         <div class="container">
-
-            <div class="nav">
-                <h1><i class="fas fa-clipboard-list"></i><span>To-do</span></h1>
-                <div class="blobs_1"></div>
-                <div class="blobs_2"></div>
-                <div class="blobs_3"></div>
-                <div class="blobs_4"></div>
-                <div class="blobs_5"></div>
-                <div class="blobs_6"></div>
-                <div class="blobs_7"></div>
-            </div>
             
-            <div class="contain">
+            <section class="contain">
+
+                <div class="nav">
+                    <h1><i class="fas fa-clipboard-list"></i><span>To-do</span></h1>
+                    <div class="blobs">
+                    <div class="blobs_1"></div>
+                    <div class="blobs_2"></div>
+                    <div class="blobs_3"></div>
+                    <div class="blobs_4"></div>
+                    <div class="blobs_5"></div>
+                    <div class="blobs_6"></div>
+                    <div class="blobs_7"></div>
+                    </div>
+                </div>
+                
                 <div class="func">
                     <div class="list" id="box">
                         <!-- <h3 id="box-title">Your list goes here...</h3> -->
@@ -32,7 +35,11 @@
                         <button type="button" onclick="addItem()" id="addList"><i class="fas fa-plus"></i></button>
                     </div>
                 </div>
-                
+
+            </section>
+            
+            <section class="contain">
+
                 <div class="quote">
                     <div class="quote-box">
                         <p>Don’t Let Yesterday Take Up Too Much Of Today.</p>
@@ -41,7 +48,7 @@
                     <div class="bg"></div>
                 </div>
 
-            </div>
+            </section>
             
         </div>
         <script src="work.js"></script>

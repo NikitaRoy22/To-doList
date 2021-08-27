@@ -29,102 +29,99 @@ body {
     min-height: 400px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     z-index: 2;
     box-sizing: border-box;
+    padding: 5em 2em;
 }
 
 .nav {
     width: 50vw;
-    height: 60px;
+    height: 72px;
     background: rgba(0, 0, 0, 0.575);
     letter-spacing: 4px;
     word-spacing: 3px;
+    display: flex;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    h1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 20%;
+        width: 100%;
+        span{
+            height:60px;
+            margin:0;
+            padding:0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display:flex;
+            color: teal;
+            font-family: serif;
+            font-size:40px;
+            font-weight: 10;
+            color: seashell;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow:row wrap;
+            -ms-flex-line-pack: center;
+            align-content:center;
+            left: 20px;
+        }
+    }
 }
 
-span{
-    height:60px;
-    margin:0;
-    padding:0;
-    display:flex;
-    position: relative;
-    color: teal;
-    font-family: serif;
-    font-size:40px;
-    font-weight: 10;
-    color: seashell;
-    flex-flow:row wrap;
-    align-content:center;
-    left: 20px;
-}
+
 
 .fa-clipboard-list {
     font-size: 70px;
-    position: absolute;
-    top: 87px;
-    left: 155px;
     color: seashell;
 }
   
   [class*="blobs"]
-    {mix-blend-mode:color;animation:blobs 4s ease-in-out infinite alternate;display:inline-block;position:absolute}
+    {mix-blend-mode:color;animation:blobs 4s ease-in-out infinite alternate;display:inline-block;position: relative;}
   
   .blobs_1{
     background:#ff1493;
     width:45px;
     height:45px;
-    top:175px;
-    left:500px
     }
   
   .blobs_2{
     background:#ae33d3;
     width:67px;
     height:67px;
-    top:155px;
-    left:280px
     }
   
   .blobs_3{
     background:#00ff00;
     width:45px;
     height:45px;
-    top:130px;
-    left:400px
     }
   
   .blobs_4{
     background:#ff0000;
     width:85px;
     height:85px;
-    top:115px;
-    left:150px
     }
   
   .blobs_5{
     background:rgb(14, 170, 170);
     width:30px;
     height:30px;
-    top:130px;
-    left:580px
     }
 
   .blobs_6{
     background: rgb(236, 202, 48);
     width:90px;
     height:90px;
-    top:115px;
-    left:680px
     }
 
   .blobs_7{
     background: navy;
     width:40px;
     height:40px;
-    top:130px;
-    left:850px
     }
   
   @keyframes blobs{
@@ -141,6 +138,15 @@ span{
     100%{border-radius:66% 34% 33% 67% / 65% 73% 27% 35%}
     }
 
+    .blobs {
+        position: absolute;
+        width: 50vw;
+        top: 70px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
 .func {
     width: 50vw;
     height: 50vh;
@@ -149,6 +155,7 @@ span{
 #box {
     width: 50vw;
     min-height: 320px;
+    max-height: 320px;
     background: rgba(156, 230, 213, 0.8);
     padding: 10px;
     text-transform: capitalize;
@@ -162,7 +169,10 @@ span{
     background: rgba(0, 0, 0, 0.575);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 8px 6px;
+    padding: 8px 0px 8px 6px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #input {
@@ -179,7 +189,7 @@ span{
 
 #addList{
     height: 35px;
-    width: 5%;
+    width: 35px;
     border-radius: 50%;
     outline: none;
     border: none;

@@ -41,32 +41,46 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   z-index: 2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 5em 2em;
 }
 
 .nav {
   width: 50vw;
-  height: 60px;
+  height: 72px;
   background: rgba(0, 0, 0, 0.575);
   letter-spacing: 4px;
   word-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-span {
+.nav h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 20%;
+  width: 100%;
+}
+
+.nav h1 span {
   height: 60px;
   margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   color: teal;
   font-family: serif;
   font-size: 40px;
@@ -74,18 +88,15 @@ span {
   color: seashell;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   left: 20px;
 }
 
 .fa-clipboard-list {
   font-size: 70px;
-  position: absolute;
-  top: 87px;
-  left: 155px;
   color: seashell;
 }
 
@@ -94,63 +105,49 @@ span {
   -webkit-animation: blobs 4s ease-in-out infinite alternate;
           animation: blobs 4s ease-in-out infinite alternate;
   display: inline-block;
-  position: absolute;
+  position: relative;
 }
 
 .blobs_1 {
   background: #ff1493;
   width: 45px;
   height: 45px;
-  top: 175px;
-  left: 500px;
 }
 
 .blobs_2 {
   background: #ae33d3;
   width: 67px;
   height: 67px;
-  top: 155px;
-  left: 280px;
 }
 
 .blobs_3 {
   background: #00ff00;
   width: 45px;
   height: 45px;
-  top: 130px;
-  left: 400px;
 }
 
 .blobs_4 {
   background: #ff0000;
   width: 85px;
   height: 85px;
-  top: 115px;
-  left: 150px;
 }
 
 .blobs_5 {
   background: #0eaaaa;
   width: 30px;
   height: 30px;
-  top: 130px;
-  left: 580px;
 }
 
 .blobs_6 {
   background: #ecca30;
   width: 90px;
   height: 90px;
-  top: 115px;
-  left: 680px;
 }
 
 .blobs_7 {
   background: navy;
   width: 40px;
   height: 40px;
-  top: 130px;
-  left: 850px;
 }
 
 @-webkit-keyframes blobs {
@@ -225,6 +222,21 @@ span {
   }
 }
 
+.blobs {
+  position: absolute;
+  width: 50vw;
+  top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .func {
   width: 50vw;
   height: 50vh;
@@ -233,6 +245,7 @@ span {
 #box {
   width: 50vw;
   min-height: 320px;
+  max-height: 320px;
   background: rgba(156, 230, 213, 0.8);
   padding: 10px;
   text-transform: capitalize;
@@ -246,7 +259,16 @@ span {
   background: rgba(0, 0, 0, 0.575);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 8px 6px;
+  padding: 8px 0px 8px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #input {
@@ -263,7 +285,7 @@ span {
 
 #addList {
   height: 35px;
-  width: 5%;
+  width: 35px;
   border-radius: 50%;
   outline: none;
   border: none;
