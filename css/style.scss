@@ -37,13 +37,11 @@ body {
 .nav {
     width: 50vw;
     height: 60px;
-    background: #fff;
-    text-shadow: 4px 4px 5px black;
+    background: rgba(0, 0, 0, 0.815);
     letter-spacing: 4px;
     word-spacing: 3px;
-    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    }
+}
 
 span{
     height:60px;
@@ -52,30 +50,22 @@ span{
     display:flex;
     position: relative;
     color: teal;
-    font-family:'Titan One',cursive;
+    font-family: serif;
     font-size:40px;
-    font-weight:700;
+    font-weight: 10;
+    color: seashell;
     flex-flow:row wrap;
     align-content:center;
-    justify-content:center;
+    left: 60px
 }
 
 .fa-clipboard-list {
     font-size: 70px;
     position: absolute;
-    top: 120px;
-    color: rgba(100, 60, 100, 0.911);
+    top: 123px;
+    left: 155px;
+    color: seashell;
 }
-
-  span:before{
-	background:linear-gradient(45deg,#fc5c7d,#6a82fb,#fc5c7d);
-	width: 265px;
-	height:100%;
-	display:block;
-	position:absolute;
-	content:"";
-	mix-blend-mode:screen
-	}
   
   [class*="blobs"]
     {mix-blend-mode:color;animation:blobs 4s ease-in-out infinite alternate}
@@ -161,14 +151,16 @@ span{
 
 #box-title {
     color: grey;
-    padding: 5px 5px;
+    padding: 5px 15px;
     font-style: italic;
     font-weight: lighter;
 }
 
 #add {
     position: relative;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.575);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 8px 2px;
 }
 
@@ -179,7 +171,7 @@ span{
     outline: none;
     background: seashell;
     border-radius: 20px;
-    padding: 0 10px;
+    padding: 0 15px;
     font-size: 20px;
     color: black;
 }
