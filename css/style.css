@@ -47,7 +47,7 @@ body {
   z-index: 2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 5em 2em;
+  padding: 4em 2em;
 }
 
 .nav {
@@ -96,7 +96,7 @@ body {
 }
 
 .fa-clipboard-list {
-  font-size: 70px;
+  font-size: 60px;
   color: seashell;
 }
 
@@ -242,12 +242,12 @@ body {
   height: 50vh;
 }
 
-#box {
-  width: 50vw;
+.list {
+  width: 100%;
   min-height: 320px;
   max-height: 320px;
   background: rgba(156, 230, 213, 0.8);
-  padding: 10px;
+  padding: 10px 0px 10px 10px;
   text-transform: capitalize;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -301,7 +301,7 @@ body {
 
 .quote .quote-box {
   position: relative;
-  width: 25vw;
+  width: 50vw;
   height: 50vh;
   min-height: 320px;
   background: url("../images/bg2.jpg");
@@ -439,5 +439,29 @@ body {
 .element:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media screen and (max-width: 573px) {
+  .contain {
+    width: 100%;
+    margin: 0;
+    padding: 80px 0px 80px 0px;
+  }
+  .contain-quote, .quote {
+    display: none;
+  }
+  .fa-clipboard-list {
+    font-size: 40px;
+  }
+  .nav {
+    height: 50px;
+  }
+  .nav h1 {
+    width: 100%;
+    margin: 0 5px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=style.css.map */
