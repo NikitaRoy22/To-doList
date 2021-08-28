@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Titan+One');
 
 * {
     padding: 0;
@@ -11,7 +10,7 @@ body {
     margin: 0;
     font-family: 'Poppins';
     color: white;
-    background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
+    background: url(../images/pexels-fauxels-3183132.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,7 +37,7 @@ body {
 .nav {
     width: 50vw;
     height: 72px;
-    background: rgba(0, 0, 0, 0.575);
+    background: rgba(0, 0, 0, 0.733);
     letter-spacing: 4px;
     word-spacing: 3px;
     display: flex;
@@ -68,84 +67,16 @@ body {
             -ms-flex-line-pack: center;
             align-content:center;
             left: 20px;
+            z-index: 2;
         }
     }
 }
 
-
-
 .fa-clipboard-list {
     font-size: 60px;
     color: seashell;
+    z-index: 2;
 }
-  
-  [class*="blobs"]
-    {mix-blend-mode:color;animation:blobs 4s ease-in-out infinite alternate;display:inline-block;position: relative;}
-  
-  .blobs_1{
-    background:#ff1493;
-    width:45px;
-    height:45px;
-    }
-  
-  .blobs_2{
-    background:#ae33d3;
-    width:67px;
-    height:67px;
-    }
-  
-  .blobs_3{
-    background:#00ff00;
-    width:45px;
-    height:45px;
-    }
-  
-  .blobs_4{
-    background:#ff0000;
-    width:85px;
-    height:85px;
-    }
-  
-  .blobs_5{
-    background:rgb(14, 170, 170);
-    width:30px;
-    height:30px;
-    }
-
-  .blobs_6{
-    background: rgb(236, 202, 48);
-    width:90px;
-    height:90px;
-    }
-
-  .blobs_7{
-    background: navy;
-    width:40px;
-    height:40px;
-    }
-  
-  @keyframes blobs{
-    0%{border-radius:26% 74% 61% 39% / 54% 67% 33% 46%}
-    10%{border-radius:74% 26% 47% 53% / 68% 46% 54% 32%}
-    20%{border-radius:48% 52% 30% 70% / 27% 37% 63% 73%}
-    30%{border-radius:73% 27% 57% 43% / 28% 67% 33% 72%}
-    40%{border-radius:63% 37% 56% 44% / 25% 28% 72% 75%}
-    50%{border-radius:39% 61% 70% 30% / 61% 29% 71% 39%}
-    60%{border-radius:27% 73% 29% 71% / 73% 51% 49% 27%}
-    70%{border-radius:39% 61% 65% 35% / 74% 65% 35% 26%}
-    80%{border-radius:55% 45% 37% 63% / 38% 30% 70% 62%}
-    90%{border-radius:25% 75% 70% 30% / 39% 50% 50% 61%}
-    100%{border-radius:66% 34% 33% 67% / 65% 73% 27% 35%}
-    }
-
-    .blobs {
-        position: absolute;
-        width: 50vw;
-        top: 70px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
 
 .func {
     width: 50vw;
@@ -156,20 +87,30 @@ body {
     width: 100%;
     min-height: 320px;
     max-height: 320px;
-    background: rgba(156, 230, 213, 0.8);
-    padding: 10px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.575);
+    padding: 10px 0px 10px 15px;
     text-transform: capitalize;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
+#box-title {
+  position: absolute;
+  padding: 0 5px;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 50;
+  font-family: serif;
+  color: rgba(255, 255, 255, 0.582);
+}
+
 #add {
     position: relative;
     height: 50px;
-    background: rgba(0, 0, 0, 0.575);
+    background: rgba(0, 0, 0, 0.836);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 8px 0px 8px 6px;
+    padding: 8px 6px 8px 6px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -183,7 +124,7 @@ body {
     background: seashell;
     border-radius: 20px;
     padding: 0 15px;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
 }
 
@@ -193,7 +134,7 @@ body {
     border-radius: 50%;
     outline: none;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     cursor: pointer;
 }
@@ -216,9 +157,22 @@ body {
     box-sizing: border-box;
     padding: 30px;
     box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
-}
+    p {
+      margin: 0;
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+    h2 {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      bottom: 10%;
+      right: 10%;
+      font-size: 1.5rem;
+    }
+  }
 
-.quote .quote-box::before {
+  .quote .quote-box::before {
     content: '\201C';
     position: absolute;
     top: -20px;
@@ -229,9 +183,8 @@ body {
     opacity: 0.2;
     background: transparent;
     pointer-events: none;
-}
-
-.quote .quote-box::after {
+  }
+  .quote .quote-box::after {
     content: '\201D';
     position: absolute;
     bottom: -10px;
@@ -241,22 +194,7 @@ body {
     background: transparent;
     filter: invert(1);
     pointer-events: none;
-}
-
-.quote .quote-box p {
-    margin: 0;
-    padding: 10px;
-    font-size: 1.2rem;
-}
-
-.quote .quote-box h2 {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    bottom: 10%;
-    right: 10%;
-    font-size: 1.5rem;
-}
+  }
 
 .quote .quote-box:hover {
     color: #F2F2F2;
@@ -287,55 +225,85 @@ body {
     -webkit-appearance: none;
     appearance: none;
   }
-  .element {
-    position: relative;
-    height: fit-content;
-    width: 100%;
+.todo {
+  width: 100%;
+  background: seashell;
+  margin: 0.5rem 0;
+  padding: 0 5px;
+  color: black;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  transition: 0.5s ease;
+  border-radius: 2px;
+  z-index: 2;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  li {
+    flex: 1;
+  }
+}
 
-    text-align: left;
-    transition: 0.2s;
-    padding: 10px;
-    background: #fff;
-    color: black;
-    cursor: pointer;
-    z-index: 4;
-    border-radius: 2px;
-    padding-right: 80px;
-    word-wrap: break-word;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.todo-element {
+  width: fit-content;
+}
+
+.check, .delete {
+  background: transparent;
+  color: rgb(26, 24, 24);
+  border: none;
+  padding: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.check:hover {
+  color: lime;
+  transform: scale(1.2);
+}
+
+.delete:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.fa-trash, .fa-check-circle {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  .check {
+    color: lime;
   }
-  .element .tick {
-    position: absolute;
-    margin: auto;
-    height: 20px;
-    top: 0;
-    bottom: 0;
-    right: 50px;
-    float: right;
-    z-index: +5;
-    filter: grayscale(1);
-  }
-  .element .dustbin {
-    position: absolute;
-    margin: auto;
-    height: 30px;
-    top: 0;
-    bottom: 0;
-    right: 10px;
-    float: right;
-    z-index: +5;
-    filter: grayscale(1);
-  }
-  .element:hover {
-    transform: scale(1.1);
-  }
+}
+
+.fall {
+  transform: translateX(8rem);
+  opacity: 0;
+}
   
 @media screen and (max-width: 573px) {
+    .container {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
     .contain {
         width: 100%;
         margin: 0;
         padding: 80px 0px 80px 0px;
+    }
+    .func {
+      width: 90%;
+    }
+    .nav {
+      width: 100%;
     }
     .contain-quote, .quote {
         display: none;
@@ -345,10 +313,22 @@ body {
     }
     .nav {
         height: 50px;
+        h1 {
+          width: 100%;
+          margin: 0 5px;
+          justify-content: flex-start;
+        }
     }
-    .nav h1 {
-        width: 100%;
-        margin: 0 5px;
-        justify-content: flex-start;
+    .nav h1 span {
+      font-size: 30px;
+    }
+    #box-title {
+      font-size: 15px;
+    }
+    #input {
+      font-size: 15px;
+    }
+    #input style:placeholder {
+      font-size: 16px;
     }
 }
